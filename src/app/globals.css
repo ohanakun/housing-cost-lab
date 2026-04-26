@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #1A2A3A;
+  --bg: #F5F5F5;
+  --card: #FFFFFF;
+  --text: #333333;
+  --muted: #666666;
+  --accent: #FF7A00;
+  --accent-dark: #E56E00;
+  --border: #E5E7EB;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Noto Sans JP', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  /* ===== ボタン ===== */
+  .btn-primary {
+    @apply bg-brand hover:bg-brand-dark text-white font-bold py-4 px-8 rounded-lg transition-all duration-200 inline-block text-center shadow-md hover:shadow-lg hover:-translate-y-0.5;
+  }
+  .btn-secondary {
+    @apply border-2 border-navy text-navy hover:bg-navy hover:text-white py-4 px-8 rounded-lg transition-all duration-200 inline-block text-center font-bold;
+  }
+
+  /* ===== サイトコンテナ ===== */
+  .site-container {
+    @apply max-w-site mx-auto px-4 sm:px-6;
+  }
+
+  /* ===== カード ===== */
+  .card {
+    @apply bg-white rounded-xl shadow-card border border-gray-100 p-6;
+  }
+  .card-hover {
+    @apply hover:shadow-card-hover hover:-translate-y-1 transition-all duration-200;
+  }
+
+  /* ===== セクションタイトル ===== */
+  .section-eyebrow {
+    @apply text-brand text-xs font-bold tracking-widest uppercase mb-2;
+  }
+  .section-title {
+    @apply font-serif text-2xl sm:text-3xl font-bold text-navy mb-8;
+  }
+
+  /* ===== キラーカード ===== */
+  .killer-card {
+    @apply bg-white rounded-xl shadow-card border border-gray-100 p-6 block hover:shadow-card-hover hover:-translate-y-1 transition-all duration-200;
+  }
+
+  /* ===== カテゴリバッジ ===== */
+  .category-badge {
+    @apply inline-flex items-center gap-1.5 text-xs font-bold bg-navy text-white px-3 py-1 rounded-full mb-4;
+  }
+
+  /* ===== 記事スタイル ===== */
+  .article-h2 {
+    @apply font-serif text-xl font-bold text-navy mt-10 mb-4 pb-2 border-l-4 border-brand pl-4;
+  }
+  .article-h3 {
+    @apply font-bold text-navy mt-6 mb-3 text-lg;
+  }
+  .article-p {
+    @apply text-site-text leading-relaxed mb-4 text-base;
+  }
+
+  /* ===== テーブル ===== */
+  .table-wrapper {
+    @apply overflow-x-auto my-6 rounded-xl shadow-card border border-gray-100;
+  }
+  .comparison-table {
+    @apply w-full text-sm;
+  }
+  .comparison-table th {
+    @apply bg-navy text-white font-bold py-3 px-4 text-left;
+  }
+  .comparison-table th:first-child {
+    @apply rounded-tl-none;
+  }
+  .comparison-table td {
+    @apply py-3 px-4 border-b border-gray-100 text-site-text;
+  }
+  .comparison-table tr:last-child td {
+    @apply border-b-0;
+  }
+  .comparison-table tr:nth-child(even) td {
+    @apply bg-gray-50;
+  }
+
+  /* ===== コールアウト ===== */
+  .callout-box {
+    @apply bg-orange-50 border border-orange-200 rounded-xl p-5 my-6;
+  }
+  .callout-warning {
+    @apply bg-red-50 border border-red-200 rounded-xl p-5 my-6;
+  }
+}
+
+/* ============================================================ */
+/* ダークテーマ記事内インラインクラスのライトモード上書き          */
+/* ============================================================ */
+
+/* callout内のテキスト */
+.callout-box p,
+.callout-box ul,
+.callout-box li { color: #374151; }
+.callout-box .text-orange-300 { color: #ea580c !important; }
+.callout-box .text-slate-300  { color: #374151 !important; }
+
+.callout-warning p,
+.callout-warning ul,
+.callout-warning li { color: #374151; }
+.callout-warning .text-red-300   { color: #dc2626 !important; }
+.callout-warning .text-slate-300 { color: #374151 !important; }
+.callout-warning strong.text-white { color: #1A2A3A !important; }
+
+/* article-p の strong */
+.article-p strong.text-white     { color: #1A2A3A !important; }
+.article-p strong.text-orange-400 { color: #ea580c !important; }
+
+/* 比較表内の色 */
+.comparison-table .text-yellow-400 { color: #b45309 !important; }
+.comparison-table .text-green-400  { color: #16a34a !important; }
+.comparison-table .text-red-400    { color: #dc2626 !important; }
+.comparison-table .text-blue-400   { color: #2563eb !important; }
+
+/* card内 dark-mode残留色 */
+.card .text-slate-300 { color: #4b5563; }
+.card .text-slate-400 { color: #6b7280; }
+.card .text-slate-500 { color: #9ca3af; }
+.card .text-white     { color: #1A2A3A; }
+
+/* ============================================================ */
+/* スマホ固定CTA用余白                                           */
+/* ============================================================ */
+@media (max-width: 639px) {
+  body { padding-bottom: 72px; }
+}
