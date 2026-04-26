@@ -39,14 +39,6 @@ const articles = [
     publishedAt: '2025年4月',
     badge: null,
   },
-  {
-    slug: 'chiku-30nen-koshigaya',
-    category: '戸建て売却',
-    title: '築30年戸建て売却相場（越谷エリア）｜現実の査定額と売れる条件',
-    description: '越谷エリアの築30年戸建ての実相場は1,500〜2,800万円。外壁ボロボロでも売れる？査定前に知るべきこと。',
-    publishedAt: '2025年4月',
-    badge: null,
-  },
 ]
 
 export default function ArticlesPage() {
