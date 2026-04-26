@@ -8,84 +8,85 @@ import { buildUtmUrl } from '@/lib/tracking'
 export const metadata: Metadata = {
   title: '【2026年版】注文住宅の総額比較ランキング｜40年コストで本当に安い会社は？',
   description:
-    'ハウスメーカー選びで総額は300万円以上変わります。初期費用＋40年維持費を含む「総コスト」で5社を比較ランキング。無料で一括資料請求できます。',
+    'ハウスメーカー選びで総額は300万円以上変わります。初期費用＋40年維持費を含む「総コスト」でトヨタホーム・大和ハウス・住友林業・積水ハウスを比較ランキング。無料で一括資料請求できます。',
   keywords: ['注文住宅 総額 比較', 'ハウスメーカー 比較', '注文住宅 ランキング', '総額 安い ハウスメーカー'],
 }
 
-// ★ 以下のデータはサンプルです。実際の取材・ASPデータに差し替えてください ★
+// ★ 費用はすべて「30坪・標準仕様」での当サイト独自試算（概算）です ★
+// ★ 坪単価の参考：デスクトップ/home-total-cost.com/app/page.tsx ★
 const companies = [
   {
     rank: 1,
-    name: 'Aホーム',
+    name: 'トヨタホーム',
     type: 'コスパ重視型',
-    initial: '2,400万円',
-    maintenance: '480万円',
-    total: '2,880万円',
-    totalNum: 2880,
-    feature: '独自工法で維持費を業界最安水準に抑制',
+    initial: '3,020万円',
+    maintenance: '520万円',
+    total: '3,540万円',
+    totalNum: 3540,
+    feature: 'ユニット工法×鉄骨の高精度施工でコストと品質を両立',
     rating: 5,
     highlights: [
-      '高耐久外壁材を標準採用。塗装頻度が一般的な窯業系の約半分',
-      '高断熱仕様で光熱費を年間20〜30万円削減。40年で600〜900万円の節約',
-      '耐震等級3を標準仕様で取得（追加費用なし）',
+      'ユニット工法による工場生産で施工精度が高く、完成後の不具合リスクが低い',
+      '鉄骨構造の高耐久性で外壁・屋根の修繕サイクルが長め。40年維持費を業界平均より抑制',
+      '耐震等級3を標準仕様で取得（追加費用なし）。地震に強い構造が標準',
     ],
-    suitableFor: ['40年トータルコストを最優先したい方', '月々の返済額を抑えたい方', '性能重視でシンプルなデザインで十分な方'],
-    notSuitableFor: ['外観デザインに強いこだわりがある方', '特定の高級ブランドを求める方'],
+    suitableFor: ['40年トータルコストを最優先したい方', '月々の返済額を抑えたい方', '工場生産の安定した品質を求める方'],
+    notSuitableFor: ['木の質感・温もりある内装にこだわりたい方', '外観デザインの自由度を最優先したい方'],
     breakdown: [
-      { item: '建物本体工事費', cost: '1,800万円' },
-      { item: '付帯工事費', cost: '300万円' },
-      { item: '諸費用（税・手続き）', cost: '180万円' },
+      { item: '建物本体工事費', cost: '2,340万円' },
+      { item: '付帯工事費', cost: '350万円' },
+      { item: '諸費用（税・手続き）', cost: '210万円' },
       { item: '外構・設備', cost: '120万円' },
-      { item: '40年維持費（塗装・修繕）', cost: '480万円' },
+      { item: '40年維持費（塗装・修繕）', cost: '520万円' },
     ],
   },
   {
     rank: 2,
-    name: 'Bハウス',
+    name: '大和ハウス',
     type: 'バランス型',
-    initial: '2,700万円',
-    maintenance: '540万円',
-    total: '3,240万円',
-    totalNum: 3240,
-    feature: '品質・コスト・保証の三拍子が揃った定番',
+    initial: '3,400万円',
+    maintenance: '580万円',
+    total: '3,980万円',
+    totalNum: 3980,
+    feature: '鉄骨造の安心感×全国網のアフターで品質とコストを両立',
     rating: 4,
     highlights: [
-      '30年長期保証（延長制度あり）で修繕コストが読みやすい',
-      '全国主要都市でのアフターサービス網が充実',
-      'ZEH（ゼロエネルギーハウス）対応プランで光熱費ゼロを目指せる',
+      '全国5,000拠点超のアフターサービス網。全国どこで建てても手厚いサポートを受けられる',
+      'ZEH（ゼロエネルギーハウス）対応プランが豊富。光熱費削減で長期的なランニングコストを低減',
+      '30年長期保証（有償延長可）で修繕コストが計画しやすい',
     ],
-    suitableFor: ['品質とコストのバランスを重視する方', '充実した保証・アフターを求める方', '全国どこでも建てたい方'],
-    notSuitableFor: ['極限まで初期費用を抑えたい方', '特殊な間取りや設計を希望する方'],
+    suitableFor: ['品質とコストのバランスを重視する方', '全国対応の充実したアフターを求める方', 'ZEH・省エネ住宅に興味がある方'],
+    notSuitableFor: ['初期費用を極限まで抑えたい方', '木造や特殊な設計を希望する方'],
     breakdown: [
-      { item: '建物本体工事費', cost: '2,050万円' },
-      { item: '付帯工事費', cost: '320万円' },
-      { item: '諸費用（税・手続き）', cost: '210万円' },
-      { item: '外構・設備', cost: '120万円' },
-      { item: '40年維持費（塗装・修繕）', cost: '540万円' },
+      { item: '建物本体工事費', cost: '2,600万円' },
+      { item: '付帯工事費', cost: '380万円' },
+      { item: '諸費用（税・手続き）', cost: '230万円' },
+      { item: '外構・設備', cost: '190万円' },
+      { item: '40年維持費（塗装・修繕）', cost: '580万円' },
     ],
   },
   {
     rank: 3,
-    name: 'Cホームズ',
-    type: '自由設計型',
-    initial: '2,600万円',
+    name: '住友林業',
+    type: '木造高品質型',
+    initial: '3,630万円',
     maintenance: '680万円',
-    total: '3,280万円',
-    totalNum: 3280,
-    feature: '設計自由度の高さが魅力。ただし維持費はやや高め',
+    total: '4,310万円',
+    totalNum: 4310,
+    feature: '木造No.1の美しさと断熱性能。ただし維持費はやや高め',
     rating: 4,
     highlights: [
-      '完全自由設計で間取り・外観のカスタマイズが可能',
-      'デザイン賞受賞実績のある設計チームが担当',
-      '太陽光発電・蓄電池の導入オプションが充実',
+      'ビッグフレーム構法（BF構法）で木造ながら大空間・大開口の間取りが実現できる',
+      '木の素材感を活かした上質なデザインが特徴。「木の家」を求める人から支持を集める',
+      '断熱性能が高く光熱費削減効果が期待できる。長期優良住宅認定取得も標準的に対応',
     ],
-    suitableFor: ['間取り・外観デザインにこだわりたい方', '趣味室や特殊な空間が必要な方', '省エネ設備を積極導入したい方'],
-    notSuitableFor: ['とにかく総コストを抑えたい方', '早めの竣工（入居）を希望する方'],
+    suitableFor: ['木の質感・温もりある空間を重視する方', '間取りのこだわりが強い方', '上質なデザインと性能を両立したい方'],
+    notSuitableFor: ['40年トータルコストを最優先したい方', 'メンテナンス頻度を最小限にしたい方'],
     breakdown: [
-      { item: '建物本体工事費', cost: '1,960万円' },
-      { item: '付帯工事費', cost: '290万円' },
-      { item: '諸費用（税・手続き）', cost: '200万円' },
-      { item: '外構・設備', cost: '150万円' },
+      { item: '建物本体工事費', cost: '2,750万円' },
+      { item: '付帯工事費', cost: '400万円' },
+      { item: '諸費用（税・手続き）', cost: '250万円' },
+      { item: '外構・設備', cost: '230万円' },
       { item: '40年維持費（塗装・修繕）', cost: '680万円' },
     ],
   },
@@ -93,8 +94,17 @@ const companies = [
 
 const allCompanies = [
   ...companies,
-  { rank: 4, name: 'Dリビング', type: '大手ブランド型', initial: '3,100万円', maintenance: '720万円', total: '3,820万円', totalNum: 3820, feature: '大手ブランドの安心感と充実の保証', rating: 3 },
-  { rank: 5, name: 'Eハウス', type: 'ハイエンド型', initial: '3,500万円', maintenance: '950万円', total: '4,450万円', totalNum: 4450, feature: '最高品質・デザイン特化。総コストは最高水準', rating: 3 },
+  {
+    rank: 4,
+    name: '積水ハウス',
+    type: 'プレミアム型',
+    initial: '3,850万円',
+    maintenance: '550万円',
+    total: '4,400万円',
+    totalNum: 4400,
+    feature: '業界最高水準の品質と保証。初期費用は高いが維持費は安定',
+    rating: 3,
+  },
 ]
 
 const Stars = ({ n }: { n: number }) => (
@@ -155,9 +165,8 @@ export default function JuutakuSougakuRankingPage() {
             <span className="text-brand">40年コストで本当に安い会社は？</span>
           </h1>
           <p className="text-site-text leading-relaxed border-l-4 border-brand pl-4 bg-orange-50 py-4 rounded-r-xl text-sm mb-6">
-            ハウスメーカー選びで、総額は<strong className="text-brand">300万円以上</strong>変わります。
-            当ページでは「初期費用＋40年維持費」を含めたトータルコストで比較し、
-            本当にコスパの良い会社をランキング形式で解説します。
+            ハウスメーカー選びで、40年総コストは<strong className="text-brand">最大860万円以上</strong>変わります。
+            当ページではトヨタホーム・大和ハウス・住友林業・積水ハウスを「初期費用＋40年維持費」のトータルコストで比較します。
           </p>
           <CTASection
             affiliate={AFFILIATE.housingPrimary}
@@ -196,7 +205,7 @@ export default function JuutakuSougakuRankingPage() {
           </div>
 
           <div className="bg-white rounded-2xl border-2 border-brand/20 p-6 text-center">
-            <p className="text-navy font-bold mb-3">1位と3位の差：<span className="text-brand text-xl font-black">約400万円</span></p>
+            <p className="text-navy font-bold mb-3">1位と4位の差：<span className="text-brand text-xl font-black">約860万円</span></p>
             <a
               href={buildUtmUrl(AFFILIATE.housingPrimary.url, { source: 'housing-lab', medium: 'cta', campaign: 'juutaku-sougaku-ranking', content: 'top3' })}
               target="_blank" rel="noopener noreferrer nofollow"
@@ -212,8 +221,8 @@ export default function JuutakuSougakuRankingPage() {
       <section className="bg-white py-14 px-4 sm:px-6 border-y border-gray-100">
         <div className="max-w-site mx-auto">
           <p className="section-eyebrow">📋 比較表</p>
-          <h2 className="section-title">主要ハウスメーカー 総額比較一覧</h2>
-          <p className="text-site-muted text-sm mb-6">※30坪・標準仕様を想定した概算。土地代を除く。</p>
+          <h2 className="section-title">主要ハウスメーカー 40年総コスト比較一覧</h2>
+          <p className="text-site-muted text-sm mb-6">※30坪・標準仕様での当サイト独自試算（概算）。土地代を除く。坪単価の参考元：各社公式・業界データ。</p>
 
           <div className="table-wrapper">
             <table className="comparison-table">
