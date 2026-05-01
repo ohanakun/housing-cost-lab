@@ -11,15 +11,14 @@ export const metadata: Metadata = {
   },
   description:
     '注文住宅の総額・ハウスメーカー比較・40年維持費を徹底比較。土地＋建物＋諸費用＋維持費の本当のコストがわかります。',
-  keywords: ['注文住宅 総額', 'ハウスメーカー比較', '住宅コスト', '40年コスト', '外壁塗装', '戸建て売却'],
+  keywords: ['注文住宅 総額', 'ハウスメーカー比較', '住宅コスト', '40年コスト', '外壁塗装'],
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
     siteName: SITE.name,
+    url: SITE.url,
   },
 }
-
-const GA_ID = 'G-3JENRXSB49'
 
 const websiteJsonLd = {
   '@context': 'https://schema.org',
@@ -35,10 +34,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* Google Analytics — gtag直貼り */}
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${SITE.gaId}`} />
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`,
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${SITE.gaId}');`,
           }}
         />
       </head>

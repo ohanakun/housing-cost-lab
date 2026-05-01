@@ -43,4 +43,18 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://home-total-cost.com/articles/housemaker-selection/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://home-total-cost.com/articles/nenshu-simulation/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

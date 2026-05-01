@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 }
 
 // ★ 費用はすべて「30坪・標準仕様」での当サイト独自試算（概算）です ★
-// ★ 坪単価の参考：デスクトップ/home-total-cost.com/app/page.tsx ★
 const companies = [
   {
     rank: 1,

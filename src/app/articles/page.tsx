@@ -39,6 +39,22 @@ const articles = [
     publishedAt: '2025年4月',
     badge: null,
   },
+  {
+    slug: 'housemaker-selection',
+    category: 'ハウスメーカー選び',
+    title: 'ハウスメーカーの選び方｜失敗しない比較ポイント7つ',
+    description: '失敗しない判断基準を解説。坪単価・保証・アフターサービスの見方など準備中です。',
+    publishedAt: '近日公開',
+    badge: '準備中',
+  },
+  {
+    slug: 'nenshu-simulation',
+    category: '予算シミュレーション',
+    title: '年収別 住宅購入シミュレーション｜年収400〜800万円の現実的な予算',
+    description: '年収別の住宅ローン・購入予算シミュレーション。現実的に建てられる家の総額を解説。準備中。',
+    publishedAt: '近日公開',
+    badge: '準備中',
+  },
 ]
 
 export default function ArticlesPage() {

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { AFFILIATE } from '@/lib/affiliates'
 import { SITE } from '@/lib/site'
+import DiagnosticQuiz from '@/components/DiagnosticQuiz'
 
 export const metadata: Metadata = {
   title: '注文住宅の総額比較・ハウスメーカー比較｜住まいの数字研究所',
@@ -44,13 +45,6 @@ const categories: { label: string; icon: string; articles: ArticleData[]; coming
         insight: 'どの外壁材が40年で最も安くなるかがわかる', nextSlug: 'gaiheki-tosou-200m2', readTime: '8分' },
       { slug: 'gaiheki-tosou-200m2', title: '外壁塗装200㎡の費用相場｜総額いくら？安くする方法',
         insight: '相場より30万円安くする相見積もりの方法', nextSlug: 'gaiheki-40nen-cost', readTime: '7分' },
-    ],
-  },
-  {
-    label: '外壁・外構・メンテナンス', icon: '🏡', comingSoon: false,
-    articles: [
-      { slug: 'chiku-30nen-koshigaya', title: '築30年戸建て売却相場（越谷エリア）2025年版',
-        insight: '越谷の実相場と査定前にやるべきことがわかる', nextSlug: 'gaiheki-40nen-cost', readTime: '9分' },
     ],
   },
 ]
@@ -155,7 +149,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ② キラーページ導線 */}
+      {/* ② 診断UI：FV直下 */}
+      <section id="quiz" className="bg-site-bg border-b border-gray-200 py-10 px-4 sm:px-6">
+        <div className="max-w-site mx-auto">
+          <div className="max-w-2xl mx-auto">
+            <DiagnosticQuiz />
+          </div>
+        </div>
+      </section>
+
+      {/* ③ キラーページ導線 */}
       <section className="bg-white py-14 px-4 sm:px-6 border-b border-gray-100">
         <div className="max-w-site mx-auto">
           <div className="mb-8">
