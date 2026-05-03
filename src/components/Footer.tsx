@@ -26,7 +26,11 @@ export default function Footer() {
 
           <div>
             <p className="font-bold text-white/80 text-sm mb-3">このサイトについて</p>
-            <p className="text-white/50 text-xs leading-relaxed">
+            <ul className="space-y-2 text-xs text-white/50">
+              <li><Link href="/about/" className="hover:text-white transition-colors">運営者情報</Link></li>
+              <li><Link href="/privacy-policy/" className="hover:text-white transition-colors">プライバシーポリシー</Link></li>
+            </ul>
+            <p className="text-white/40 text-xs mt-4 leading-relaxed">
               掲載情報は執筆時点の相場です。最終的な判断は複数社の見積もりをご確認ください。
             </p>
           </div>
