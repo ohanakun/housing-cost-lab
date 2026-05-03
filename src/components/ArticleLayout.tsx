@@ -58,6 +58,12 @@ export default function ArticleLayout({ title, description, category, publishedA
             </p>
           </div>
 
+          {/* PR表記（景品表示法ステマ規制対応） */}
+          <div className="mb-6 flex items-center gap-2 text-xs text-gray-400">
+            <span className="bg-gray-100 text-gray-500 font-bold px-2 py-0.5 rounded">PR</span>
+            <span>本記事はアフィリエイトリンクを含みます。詳細は<Link href="/privacy-policy/" className="underline hover:text-brand transition-colors">プライバシーポリシー</Link>をご確認ください。</span>
+          </div>
+
           {/* 本文 */}
           {children}
 
