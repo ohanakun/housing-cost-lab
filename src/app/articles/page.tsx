@@ -37,7 +37,7 @@ const articles = [
     slug: 'nenshu-simulation',
     category: '予算シミュレーション',
     title: '年収別 住宅購入シミュレーション｜年収400〜800万円の現実的な予算',
-    description: '年収別の住宅ローン・購入予算シミュレーション。現実的に建てられる家の総額を解説。',
+    description: '年収400〜800万円別に借入可能額・月返済額・購入総額を試算。返済負担率25%以内で無理のない家づくり予算の考え方を解説。',
     publishedAt: '2026年5月',
     badge: null,
   },
