@@ -19,7 +19,7 @@ export const AFFILIATE = {
   // ━━━━━━━━━━━━━━━━━━━━━━━━━
 
   housingPrimary: {
-    url: 'https://【タウンライフ家づくり_アフィリエイトURLに変更してください】',
+    url: 'https://www.town-life.jp/',  // ★ A8.net承認後、アフィリエイトURLに差し替えてください
     name: 'タウンライフ家づくり',
     label: '無料でハウスメーカーを比較する',
     labelB: '間取り・見積もりを無料で取り寄せる',
@@ -29,7 +29,7 @@ export const AFFILIATE = {
   } as AffiliateEntry,
 
   housingSecondary: {
-    url: 'https://【LIFULL HOME\'S_アフィリエイトURLに変更してください】',
+    url: 'https://www.homes.co.jp/',   // ★ バリューコマース承認後、アフィリエイトURLに差し替えてください
     name: 'LIFULL HOME\'S',
     label: 'ハウスメーカーのカタログを一括請求',
     labelB: '無料でカタログをまとめてもらう',
@@ -43,7 +43,7 @@ export const AFFILIATE = {
   // ━━━━━━━━━━━━━━━━━━━━━━━━━
 
   reform: {
-    url: 'https://【ホームプロ_リフォーム見積もりのアフィリエイトURLに変更してください】',
+    url: 'https://www.homepro.co.jp/', // ★ A8.net承認後、アフィリエイトURLに差し替えてください
     name: 'ホームプロ（リフォーム）',
     label: '無料でリフォーム見積もりを取る',
     labelB: '複数社のリフォーム費用を比較する',
@@ -53,7 +53,7 @@ export const AFFILIATE = {
   } as AffiliateEntry,
 
   gaiheki: {
-    url: 'https://【外壁塗装の窓口_アフィリエイトURLに変更してください】',
+    url: 'https://gaiheki-madoguchi.com/', // ★ afb承認後、アフィリエイトURLに差し替えてください
     name: '外壁塗装の窓口',
     label: '外壁塗装の費用を無料で比較する',
     labelB: '外壁塗装の相場を無料チェック',
