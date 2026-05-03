@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- トップページ -->
   <url>
     <loc>https://home-total-cost.com/</loc>
     <lastmod>2026-04-26</lastmod>
@@ -8,6 +9,15 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- 記事一覧 -->
+  <url>
+    <loc>https://home-total-cost.com/articles/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- キラーページ（CV直結・優先度高） -->
   <url>
     <loc>https://home-total-cost.com/articles/juutaku-sougaku-ranking/</loc>
     <lastmod>2026-04-26</lastmod>
@@ -16,45 +26,92 @@
   </url>
 
   <url>
-    <loc>https://home-total-cost.com/articles/juutaku-sougaku-ikura/</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://home-total-cost.com/articles/townlife-kuchikomi/</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <!-- 総額・予算カテゴリ -->
   <url>
-    <loc>https://home-total-cost.com/articles/</loc>
+    <loc>https://home-total-cost.com/articles/juutaku-sougaku-ikura/</loc>
     <lastmod>2026-04-26</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://home-total-cost.com/articles/gaiheki-40nen-cost/</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://home-total-cost.com/articles/gaiheki-tosou-200m2/</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://home-total-cost.com/articles/housemaker-selection/</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://home-total-cost.com/articles/nenshu-simulation/</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ハウスメーカー比較カテゴリ -->
+  <url>
+    <loc>https://home-total-cost.com/articles/housemaker-selection/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://home-total-cost.com/articles/housemaker-hikaku-pointo/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://home-total-cost.com/articles/housemaker-mitsumori-hikaku/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 間取り・後悔対策カテゴリ -->
+  <url>
+    <loc>https://home-total-cost.com/articles/madori-muryo-hikaku/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://home-total-cost.com/articles/chumon-juutaku-kokai/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- コスト削減カテゴリ -->
+  <url>
+    <loc>https://home-total-cost.com/articles/gaiheki-40nen-cost/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://home-total-cost.com/articles/gaiheki-tosou-200m2/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- サイト情報 -->
+  <url>
+    <loc>https://home-total-cost.com/about/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://home-total-cost.com/privacy-policy/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
